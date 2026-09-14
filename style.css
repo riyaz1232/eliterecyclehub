@@ -606,6 +606,77 @@ textarea {
   padding: 4rem 0;
 }
 
+.blog-section {
+  padding: 4rem 0;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.blog-card {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.blog-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.blog-tag {
+  background: rgba(22, 163, 74, 0.1);
+  color: var(--accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.blog-card h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.blog-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.blog-link {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  transition: color 0.25s ease;
+}
+
+.blog-link:hover {
+  color: var(--accent-2);
+}
+
+@media (max-width: 720px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .areas-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -931,6 +1002,7 @@ textarea {
   .services-section,
   .rates-section,
   .areas-section,
+  .blog-section,
   .reviews,
   .contact-section {
     padding: 3rem 0;
