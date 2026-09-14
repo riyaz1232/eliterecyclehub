@@ -55,7 +55,7 @@ contactForm.addEventListener('submit', (event) => {
 
   const subject = encodeURIComponent(`Elite Recycle Hub inquiry from ${name}`);
   const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message || 'No additional details provided.'}`);
-  const mailtoLink = `mailto:elite.recycle.hub@gmail.com?subject=${subject}&body=${body}`;
+  const mailtoLink = `mailto:eliterecyclehub@gmail.com?subject=${subject}&body=${body}`;
 
   setFormStatus('Your request is ready to send. Please complete the email in your mail app or contact us directly on WhatsApp if you prefer.', 'success');
   window.open(mailtoLink, '_blank');
